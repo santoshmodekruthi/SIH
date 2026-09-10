@@ -20,13 +20,13 @@ export const WorkoutMode = () => {
 
     if (isResting && !isPaused && timeLeft > 0) {
       timer = setInterval(() => {
-        setTimeLeft((t) => t - 1);
+        setTimeLeft((time) => time - 1);
       }, 1000);
     }
 
     if (isResting && timeLeft === 0) {
       setIsResting(false);
-      setCurrentSet((s) => s + 1);
+      setCurrentSet((set) => set + 1);
       setTimeLeft(workout.rest);
       setIsPaused(false);
     }
@@ -49,7 +49,7 @@ export const WorkoutMode = () => {
 
   const handleSkipRest = () => {
     setIsResting(false);
-    setCurrentSet((s) => s + 1);
+    setCurrentSet((set) => set + 1);
     setTimeLeft(workout.rest);
     setIsPaused(false);
   };
@@ -119,13 +119,13 @@ export const WorkoutMode = () => {
         </button>
 
         <div className="flex gap-2">
-          {Array.from({ length: workout.sets }).map((_, i) => (
+          {Array.from({ length: workout.sets }).map((_, index) => (
             <div
-              key={i}
+              key={index}
               className={`h-2 w-8 rounded-full transition-colors ${
-                i + 1 < currentSet
+                index + 1 < currentSet
                   ? 'bg-primary'
-                  : i + 1 === currentSet
+                  : index + 1 === currentSet
                     ? 'bg-primary/50'
                     : 'bg-surfaceHover'
               }`}

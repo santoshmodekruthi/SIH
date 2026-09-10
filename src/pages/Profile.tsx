@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Card } from '../components/ui/Card';
 import { Button } from '../components/ui/Button';
 import { Settings, Target, Activity, Flame, Dumbbell, Award, Clock, Camera } from 'lucide-react';
@@ -165,3 +165,4 @@ export const Profile = () => {
     </div>
   );
 };
+

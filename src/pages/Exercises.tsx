@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Search, Filter, Play, Clock, Flame } from 'lucide-react';
+import { Search, Clock } from 'lucide-react';
 import { exercises } from '../data/mockData';
 import { Card } from '../components/ui/Card';
 import { Button } from '../components/ui/Button';
@@ -122,3 +122,4 @@ export const Exercises = () => {
   );
 };
 // forced reload
+

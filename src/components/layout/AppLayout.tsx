@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Outlet, NavLink } from 'react-router-dom';
 import { Navbar } from './Navbar';
 import { AIChatbot } from '../ui/AIChatbot';

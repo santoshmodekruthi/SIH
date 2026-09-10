@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
-import { Button } from '../../components/ui/Button';
 
 const steps = [
   {
@@ -118,3 +117,4 @@ export const Onboarding = () => {
     </div>
   );
 };
+

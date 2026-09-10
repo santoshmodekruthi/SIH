@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '../components/ui/Button';
 import { Card } from '../components/ui/Card';
-import { Target, Activity, Flame, Trophy } from 'lucide-react';
+import { Trophy } from 'lucide-react';
 
 const assessmentQuestions = [
   {
@@ -160,3 +160,4 @@ export const FitnessAssessment = () => {
     </div>
   );
 };
+

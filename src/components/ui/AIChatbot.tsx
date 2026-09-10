@@ -1,8 +1,7 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Send, Bot, User, Sparkles, X, MessageSquare } from 'lucide-react';
 import { fitnessQuestions } from '../../data/fitnessQuestions';
-import { Button } from './Button';
 
 interface Message {
   id: string;
@@ -192,3 +191,4 @@ export const AIChatbot = () => {
     </>
   );
 };
+

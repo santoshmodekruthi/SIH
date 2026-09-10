@@ -1,13 +1,10 @@
-import React from 'react';
-import { useParams, useNavigate, Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { useParams, Link } from 'react-router-dom';
 import { exercises } from '../data/mockData';
 import { Button } from '../components/ui/Button';
-import { ArrowLeft, Play, Dumbbell, Activity, Clock, Flame, AlertCircle } from 'lucide-react';
+import { ArrowLeft, Dumbbell, Activity, Clock, Flame, AlertCircle } from 'lucide-react';
 
 export const ExerciseDetail = () => {
   const { id } = useParams();
-  const navigate = useNavigate();
   // using first exercise if not found for mock purposes
   const exercise = exercises.find(e => e.id === id) || exercises[0];
 
@@ -105,3 +102,4 @@ export const ExerciseDetail = () => {
     </div>
   );
 };
+

@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import { useState } from 'react';
 import { Card } from '../components/ui/Card';
 import { Button } from '../components/ui/Button';
 import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
-import { Settings, Droplets, Target, Utensils, ChevronRight, Apple, Beef, Wheat } from 'lucide-react';
+import { Settings, Droplets, Target, Utensils, ChevronRight, Apple, Beef } from 'lucide-react';
 
 export const Diet = () => {
   const [waterGlasses, setWaterGlasses] = useState(3);
@@ -131,7 +130,7 @@ export const Diet = () => {
                         dataKey="value"
                       >
                         {macroData.map((entry, index) => (
-                          <Cell key={`cell-${index}`} fill={entry.color} cornerRadius={4} />
+                          <Cell key={`cell-${index}`} fill={entry.color} />
                         ))}
                       </Pie>
                     </PieChart>
@@ -282,3 +281,4 @@ export const Diet = () => {
     </div>
   );
 };
+

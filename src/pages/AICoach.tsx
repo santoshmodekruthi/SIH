@@ -1,5 +1,5 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useState, useRef, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import { Send, Bot, User, Sparkles } from 'lucide-react';
 
 interface Message {
@@ -152,3 +152,4 @@ export const AICoach = () => {
     </div>
   );
 };
+

@@ -1,4 +1,5 @@
-import React, { ComponentProps } from 'react';
+import React from 'react';
+import type { ComponentProps } from 'react';
 import { cn } from '../../utils/cn';
 import { motion } from 'framer-motion';
 
@@ -25,3 +26,4 @@ export const Card = React.forwardRef<HTMLDivElement, CardProps>(
   }
 );
 Card.displayName = 'Card';
+
